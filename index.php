@@ -30,22 +30,21 @@
 window.onload = ()=> {
 		let choices = ["Rock", "Paper", "Scissors"]
 		let  computer = choices[Math.floor(Math.random() * choices.length)]
-		console.log(computer)
-
 		let buttons = document.querySelectorAll(".button")
 		buttons.forEach(btn => {
-		btn.addEventListener("click", (e)=>{
-		let value = e.target.value
-			if (value == "Rock" && computer == "Scissors") {
-				console.log("You win!!")
-			} else if (value == "Paper" && computer == "Rock") {
-				console.log("You win!!")
-			} else if (value == "Scissors" && computer == "Paper") {
-				console.log("You win!!")
-			} else if (value == computer) {
-				console.log("It's a lie")
-			} else {
-				console.log("You lose!! ☹️ ")	
+			btn.addEventListener("click", (e)=>{
+							let value = e.target.value
+							if (value == "Rock" && computer == "Scissors") {
+								console.log("You win!!")
+							} else if (value == "Paper" && computer == "Rock") {
+								console.log("You win!!")
+							} else if (value == "Scissors" && computer == "Paper") {
+								console.log("You win!!")
+							} else if (value == computer) {
+								console.log("It's a lie")
+							} else {
+								console.log("You lose!! ☹️ ")	
+							}
 			})
 		})
 		}
