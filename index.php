@@ -33,18 +33,18 @@ window.onload = ()=> {
 		let buttons = document.querySelectorAll(".button")
 		buttons.forEach(btn => {
 			btn.addEventListener("click", (e)=>{
-							let value = e.target.value
-							if (value == "Rock" && computer == "Scissors") {
-								console.log("You win!!")
-							} else if (value == "Paper" && computer == "Rock") {
-								console.log("You win!!")
-							} else if (value == "Scissors" && computer == "Paper") {
-								console.log("You win!!")
-							} else if (value == computer) {
-								console.log("It's a lie")
-							} else {
-								console.log("You lose!! ☹️ ")	
-							}
+				let value = e.target.value
+				if (value == "Rock" && computer == "Scissors") {
+					alert("You win!!")
+				} else if (value == "Paper" && computer == "Rock") {
+					alert("You win!!")
+				} else if (value == "Scissors" && computer == "Paper") {
+					alert("You win!!")
+				} else if (value == computer) {
+					alert("It's a tie")
+				} else {
+					alert("You lose!! ☹️ ")	
+				}
 			})
 		})
 		}
