@@ -35,7 +35,7 @@ window.onload = ()=> {
 			btn.addEventListener("click", (e)=>{
 				let value = e.target.value
 				if (value == "Rock" && computer == "Scissors") {
-					alert("You win!!")
+					alert("You win!!", function(){ window.location.reload()})
 				} else if (value == "Paper" && computer == "Rock") {
 					alert("You win!!")
 				} else if (value == "Scissors" && computer == "Paper") {
