@@ -27,7 +27,7 @@
 		<button class="button" value="Scissors">Scissors</button>
 		<br>
 	<script>
-window.onrefresh = ()=> {
+window.onload = ()=> {
 		let choices = ["Rock", "Paper", "Scissors"]
 		let  computer = choices[Math.floor(Math.random() * choices.length)]
 		console.log(computer)
