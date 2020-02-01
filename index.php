@@ -35,15 +35,25 @@ window.onload = ()=> {
 			btn.addEventListener("click", (e)=>{
 				let value = e.target.value
 				if (value == "Rock" && computer == "Scissors") {
-					alert("You win!!", function(){ window.location.reload()})
+					console.log("test")
+						alert("You win!!")
+						window.location.reload()
 				} else if (value == "Paper" && computer == "Rock") {
-					alert("You win!!")
+					console.log("test")
+						alert("You win!!")
+						window.location.reload()
 				} else if (value == "Scissors" && computer == "Paper") {
-					alert("You win!!")
+					console.log("test")
+						alert("You win!!")
+						window.location.reload()
 				} else if (value == computer) {
-					alert("It's a tie")
+					console.log("test")
+						alert("It's a tie")
+						window.location.reload()
 				} else {
-					alert("You lose!! ☹️ ")	
+					console.log("test")
+						alert("You lose!! ☹️ ")
+						window.location.reload()
 				}
 			})
 		})
