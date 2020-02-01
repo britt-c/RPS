@@ -4,21 +4,52 @@
 		<style>
 			body {
 				background-color: maroon;
+				text-align: center;
 			}
-		</style>			
+
+			.button {
+				background-color: yellow;
+				font-size: 30px;
+					
+			}
+			
+			.button:hover {
+				background-color: black;
+				color: red;
+			}
+		</style>	
 	</head>
-	<body class="game">
-		<h1>Rock ~ Paper ~ Scissors</h1>
+	<body>
+		<h1>Rock 💀 Paper 💀 Scissors</h1>
 		<h2>Choose your champion!</h2>
-	<form>
-		<input type="button" value="Rock">
-		<input type="button" value="Paper">
-		<input type="button" value="Scissors">
+		<button class="button" value="Rock">Rock</button>
+		<button class="button" value="Paper">Paper</button>
+		<button class="button" value="Scissors">Scissors</button>
 		<br>
-		<br>
-		<input type="submit" value="Submit">
-	</form>
-	<script></script>
+	<script>
+window.onrefresh = ()=> {
+		let choices = ["Rock", "Paper", "Scissors"]
+		let  computer = choices[Math.floor(Math.random() * choices.length)]
+		console.log(computer)
+
+		let buttons = document.querySelectorAll(".button")
+		buttons.forEach(btn => {
+		btn.addEventListener("click", (e)=>{
+		let value = e.target.value
+			if (value == "Rock" && computer == "Scissors") {
+				console.log("You win!!")
+			} else if (value == "Paper" && computer == "Rock") {
+				console.log("You win!!")
+			} else if (value == "Scissors" && computer == "Paper") {
+				console.log("You win!!")
+			} else if (value == computer) {
+				console.log("It's a lie")
+			} else {
+				console.log("You lose!! ☹️ ")	
+			})
+		})
+		}
+	</script>
 	</body>
 
 </html>
