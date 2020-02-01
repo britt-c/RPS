@@ -36,19 +36,19 @@ window.onload = ()=> {
 				let value = e.target.value
 				if (value == "Rock" && computer == "Scissors") {
 					console.log("test")
-						alert("You win!!")
+						alert("🥳 You win!! 🥳")
 						window.location.reload()
 				} else if (value == "Paper" && computer == "Rock") {
 					console.log("test")
-						alert("You win!!")
+						alert("🥳 You win!! 🥳")
 						window.location.reload()
 				} else if (value == "Scissors" && computer == "Paper") {
 					console.log("test")
-						alert("You win!!")
+						alert("🥳 You win!! 🥳")
 						window.location.reload()
 				} else if (value == computer) {
 					console.log("test")
-						alert("It's a tie")
+						alert("🙃🙃 It's a tie!! 🙃🙃")
 						window.location.reload()
 				} else {
 					console.log("test")
